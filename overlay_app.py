@@ -3,6 +3,8 @@ from PyQt5.QtCore import Qt, QPoint
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
+from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent, QMediaMetaData
+
 import sys
 
 class MovableOverlay(QWidget):
@@ -30,6 +32,8 @@ class MovableOverlay(QWidget):
         # setting geometry of button
         button.setGeometry(10, 10, 30, 30)
         button.clicked.connect(self.make_invisible)
+
+
  
     def make_invisible(self):
         # Set window opacity to 0 and make it click-through
